@@ -92,6 +92,7 @@ header .content p {
 
 .header-img {
     width: 1440px;
+    
     height: 735px;
     margin: 100px auto;
 
@@ -115,7 +116,7 @@ header .content p {
     margin: 50px auto;
     gap: 80px;
 
-    display: none;
+    
 }
 
 .our-feature .main-img {
@@ -164,10 +165,10 @@ letter-spacing: 0%;
 text-align: left;
 }
 
-@media screen and(max-width=576px) {
-    header .top, header ul, header .content{
-        flex-direction: column;
+@media screen and (max-width: 576px) {
+    img {
+      width: 100%; /* Ensure the image resizes on smaller screens */
+      height: auto; /* Maintain the aspect ratio */
     }
-    .header-img img {
-        width: 100%;}
-}
+  }
+  
