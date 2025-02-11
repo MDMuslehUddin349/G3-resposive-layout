@@ -26,7 +26,7 @@ body {
 
 /* header */
 .bg-top {
-
+    min-width: 1448px;
     background: rgba(255, 144, 14, 0.1);
 
 }
@@ -251,15 +251,24 @@ p {
 }
 
 /* facts */
-.facts {
-
+/* .facts {
+    width: auto;
     display: flex;
     gap: 0px;
     flex-direction: column;
     justify-content: left;
     margin-left: 300px;
+} */
+.facts{
+    width: 1440px;
+    height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
 }
-
 .facts h2 {
     color: rgb(19, 19, 19);
     font-family: Work Sans;
@@ -267,7 +276,7 @@ p {
     font-weight: 700;
     line-height: 53px;
     letter-spacing: 0%;
-    text-align: left;
+    text-align: center;
     margin-bottom: 0px;
 }
 
@@ -312,15 +321,14 @@ p {
 }
 
 .sponser-content {
-    width: 542px;
-    height: 129px;
+    width: 1440px;
+    height: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
     align-items: center;
     text-align: center;
-    gap: 0px;
+    margin: 20px auto;
 }
 
 .sponser-content h2 {
@@ -348,7 +356,7 @@ p {
 
 footer {
     width: 1440px;
-    height: 10px;
+    height: 100px;
     border-radius: 8px;
     background: rgb(255, 244, 231);
     margin: 60px auto 100px;
@@ -368,148 +376,3 @@ footer p {
     letter-spacing: 0%;
 }
 
-/* Base styles remain unchanged */
-
-/* Responsive Styles */
-
-/* Small devices (up to 576px) */
-@media (max-width: 576px) {
-    nav {
-        flex-direction: column;
-        margin: 0 20px;
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .banner {
-        flex-direction: column;
-        margin: 0 20px;
-        text-align: center;
-    }
-    .banner-content, .banner-profile-pic {
-        width: 100%;
-    }
-    .about {
-        padding: 50px 20px;
-    }
-    .skills-container, .resume-container {
-        flex-direction: column;
-    }
-    footer {
-        flex-direction: column;
-        padding: 50px 20px;
-    }
-    .your-feature, .our-feature {
-        flex-direction: column;
-    margin: 50px auto;
-    
-    }
-    .our-feature{
-        flex-direction: column;
-        margin: 0px;
-        justify-content: left;
-        text-align: left;
-
-    }
-    .our-feature .main-img {
-        
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: left;
-        text-align: left;
-    
-    
-    }
-    .our-feature .main-img  img{
-        justify-content: left;
-        align-items: ;
-    }
-
-
-    .our-feature .content{
-        justify-content: left;
-        text-align: left;
-        
-    }
-    .your-feature .content{
-        flex-wrap: wrap;
-    }
-    .your-feature-img, .header-img img {
-        width: 100%;
-    }
-    .box-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .sponser-icon {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-}
-
-/* Medium devices (576px to 992px) */
-@media (min-width: 576px) and (max-width: 992px) {
-    nav {
-        margin: 0 50px;
-    }
-    .banner {
-        flex-direction: column;
-        align-items: center;
-        margin: 0 50px;
-    }
-    .banner-content {
-        text-align: center;
-        width: 100%;
-    }
-    .skills-container, .resume-container {
-        flex-direction: column;
-    }
-    .about {
-        padding: 100px 50px;
-    }
-    footer {
-        flex-direction: column;
-        padding: 100px 50px;
-    }
-    .your-feature, .our-feature {
-        flex-direction: column;
-        align-items: center;
-    }
-    .box-container {
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-    .sponser-icon {
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-}
-
-/* Large devices (above 993px) */
-@media (min-width: 993px) {
-    nav {
-        margin: 0px 200px;
-    }
-    .banner {
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 35px 0 230px;
-    }
-    .skills-container, .resume-container {
-        flex-direction: row;
-    }
-    .about {
-        padding: 150px 200px;
-    }
-    footer {
-        flex-direction: row;
-        padding: 130px 230px;
-    }
-    .your-feature, .our-feature {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .box-container {
-        justify-content: space-between;
-    }
-}
